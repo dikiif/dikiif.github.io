@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+/* Navbar  */
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+.button-login {
+    background-color: #4691F2;
+    color: #fff;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.button-login:hover {
+    background-color: #7EB2F4;
+    color: #264F85;
+}
+
+.dropdown-menu a {
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown-menu a:hover{
+    background-color: #4691F2;
+    color: #fff;
+}
+
+/* Navbar Mobile  */
+.bi-house-door-fill,
+.bi-compass-fill,
+.bi-calendar-check-fill,
+.bi-credit-card-2-front-fill,
+.bi-building-fill {
+    color: #4691F2;
+}
+
+
+.small {
+    color: #31353C;
+}
+
+.small.active {
+    font-weight: bold;
+    color: black;
+}
+
+@media (min-width: 991px) {
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #4691F2;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+        width: 35%;
+        visibility: visible;
+    }
+}
+/* End of Navbar  */
+
+/* Hero Home and Destinations */
+.section-hero {
+    background-image: url(assets/Hero\ 1.png);
+    padding-top: 200px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+
+.section-hero::after{
+    content: "";
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.section-hero h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.section-hero h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Hero Events */
+.events-section-hero {
+    background-image: url(assets/events\ hero.png);
+    padding-top: 200px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+
+.events-section-hero::after{
+    content: "";
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.events-section-hero h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.events-section-hero h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+/* Search Bar  */
+
+.h-search-form {
+    width: 100%;
+    position: relative;
+}
+
+.h-search-form input {
+    width: 100%;
+    padding: 0 30px;
+    border-radius: 50px;
+    border: none;   
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    color: #31353C;
+    height: 64px;
+}
+
+.h-search-form input::placeholder {
+    font-weight: 400;
+    color: #B5BBC1;
+    font-style: italic;
+}
+
+.h-search-form button {
+    position: absolute;
+    right: 6px;
+    height: 54px;
+    border: none;
+    color: #fff;
+    background-color: #4691F2;
+    top: 5px;
+    border-radius: 50px;
+    width: 100px;
+}
+
+.h-search-form button:hover {
+    background-color: #7EB2F4;
+    color: #264F85;
+    transition: 0.3s ease-in-out;
+}
+
+
+@media (max-width: 991px) {
+    .hero-caption h1 {
+        font-size: 54px;
+    }
+
+    .events-section-hero h1 {
+        font-size: 54px;
+    }
+
+    .hotels-section-hero h1 {
+        font-size: 54px;
+    }
+
+    .hero-caption h2 {
+        font-size: 36px;
+    }
+
+    .events-section-hero h2 {
+        font-size: 36px;
+    }
+
+    .hotels-section-hero h2 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .hero-caption h1 {
+        font-size: 36px;
+    }
+
+    .events-section-hero h1 {
+        font-size: 36px;
+    }
+
+    .hotels-section-hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-caption h2 {
+        font-size: 24px;
+    }
+
+    .events-section-hero h2 {
+        font-size: 24px;
+    }
+
+    .hotels-section-hero h2 {
+        font-size: 24px;
+    }
+}
+
+/* Hotels Hero  */
+.hotels-section-hero {
+    background-image: url(assets/hotels\ hero.png);
+    padding-top: 200px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+
+.hotels-section-hero::after{
+    content: "";
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hotels-section-hero h1 {
+    color: #fff;
+    font-size: 62px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.hotels-section-hero h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Hotels Selected Date  */
+
+.date-selection input {
+    border: 2px solid #ddd;
+    border-radius: 15px 10px 10px 15px;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.date-selection label {
+    background-color: #007bff;
+    border-radius: 5px;
+    width: 120px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flexbox;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+#checkin-date {
+    width: 100%;
+    height: 64px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 24px 6px 6px 6px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#checkout-date {
+    width: 100%;
+    height: 64px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px 24px 6px 6px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover dan Focus untuk input */
+.date-item .form-control:hover {
+    border-color: #007BFF; /* Warna biru */
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.date-item .form-control:focus {
+    border-color: #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Hotels Collapsible Panel */
+.collapsible-panel {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+}
+
+.toggle-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-button:hover {
+    background-color: #3472C0;
+}
+
+.collapse {
+    margin-top: 15px;
+    margin-left: 50px;
+    border-radius: 0px;
+
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 200px;
+}
+
+.form-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-group-buttons .btn {
+    color: white;
+    background-color: #4691F2;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+}
+
+.input-group-buttons input {
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+/* Styling Card */
+#Recommendation {
+    padding: 20px 0;
+    background-color: #ffff;
+}
+
+.rec-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rec-title p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Card Styling */
+
+.card {
+    border: none;  /* Remove the border */
+    box-shadow: none; /* Remove the shadow */
+    border-radius: 0; /* Remove rounded corners */
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-title:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.card-body .text-muted {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Rating and Price Section */
+.card .d-flex span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card .bi-star-fill {
+    color: #fbc02d;
+}
+
+.card .bi-star-fill:hover {
+    color: #ffc107;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .rec-title h2 {
+        font-size: 2rem;
+    }
+
+    .rec-title p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .rec-title h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .rec-title h2, p {
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: .9rem;
+    }
+
+    .card-text span .text-muted {
+        font-size: .5rem;
+    }
+}
+
+/* Footer */
+/* Footer Styling */
+.footer-07 {
+    background-color: #2d2d2d; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 50px 0; /* Padding around the footer */
+    border-radius: 100px 100px 0 0;
+}
+
+.footer-07 .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-07 .logo:hover {
+    color: #4691F2; /* Change color on hover */
+}
+
+.footer-07 .menu {
+    margin: 20px 0;
+}
+
+.footer-07 .menu a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-07 .menu a:hover {
+    color: #4691F2; /* Change color on hover */
+}
+
+.footer-07 .ftco-footer-social {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-07 .ftco-footer-social li {
+    margin: 0 10px;
+}
+
+.footer-07 .ftco-footer-social li a {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-07 .ftco-footer-social li a:hover {
+    color: #4691F2; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .footer-07 .menu {
+        font-size: 14px;
+    }
+
+    .footer-07 .ftco-footer-social li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-07 {
+        border-radius: 50px 50px 0 0;
+    }
+
+    .footer-07 .menu {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-07 .menu a {
+        display: inline-block;
+        margin: 10px 5px;
+    }
+    
+    .footer-07 .ftco-footer-social li a {
+        font-size: 22px;
+    }
+
+    .footer-heading .logo img {
+        width: 240px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .footer-07 {
+        border-radius: 50px 50px 0 0;
+    }
+
+    .footer-07 .logo {
+        font-size: 28px;
+    }
+
+    .footer-07 .menu {
+        font-size: 12px;
+    }
+
+    .footer-07 .ftco-footer-social li a {
+        font-size: 18px;
+    }
+
+    .footer-heading .logo img {
+        width: 168px;
+    }
+}
+
+/* Copyright Styling */
+.footer-07 .copyright {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-07 .copyright a {
+    color: #4691F2;
+    text-decoration: none;
+}
+
+.footer-07 .copyright i {
+    color: #4691F2;
+}
+
+.searched-footer-07 {
+    margin-top: 100px;
+}
