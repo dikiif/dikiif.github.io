@@ -84,6 +84,20 @@
         visibility: visible;
     }
 }
+
+@media (max-width: 576px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar-brand img {
+        width: 75px;
+    }
+    .button-login {
+        font-size: small;
+    } 
+
+}
 /* End of Navbar  */
 
 /* Hero Home and Destinations */
@@ -762,13 +776,28 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 412px) {
+    .item-detail-hero {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 571px) {
+    .item-detail-hero {
+        margin-top: 120px;
+    }
+}
+
 @media (max-width: 768px) {
+    .item-detail-hero {
+        margin-top: 150px;
+    }
     .hotel-title {
         font-size: 18px;
     }
 
-    .see-map {
-        font-size: 12px;
+    .see-map span {
+        display: none;
     }
 }
 
