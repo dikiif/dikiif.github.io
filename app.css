@@ -688,3 +688,245 @@
 .searched-footer-07 {
     margin-top: 100px;
 }
+
+/* Hotel Detail Section */
+
+/* General styling for hero section */
+.item-detail-hero {
+    margin-top: 200px;
+}
+
+/* Styling for primary image */
+.item-detail-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-detail-primary img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Title styling */
+.hotel-title {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Styling for secondary images */
+.item-detail-secondary {
+    margin-top: 8px;
+    padding: 8px;
+}
+
+.item-detail-secondary img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for secondary images */
+.item-detail-secondary img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Toggle to Maps  */
+
+/* Styling for the See on Maps button */
+.see-map {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.see-map:hover {
+    color: white;
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hotel-title {
+        font-size: 18px;
+    }
+
+    .see-map {
+        font-size: 12px;
+    }
+}
+
+.content-desc {
+    margin-top: 50px;
+}
+
+.content-desc h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Item Title */
+.item-title {
+    margin-top: 35px;
+}
+
+.item-title h2 {
+    font-weight: bold;
+
+}
+
+
+
+/*  Item Facility */
+/* Container styling */
+.hotel-facility-container {
+    border: 1px solid #ddd; /* Border luar */
+    border-radius: 12px; /* Sedikit lengkung pada sudut */
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 35px;
+}
+
+/* Header styling */
+.table-header {
+    background-color: #4691F2; /* Warna biru untuk header */
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 10px 0;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Garis bawah untuk memisahkan */
+}
+
+/* Row styling */
+.table-row {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Individual column styling */
+.item-facility, 
+.facility-detail {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd; /* Border antar kolom */
+}
+
+.item-facility:last-child, 
+.facility-detail:last-child {
+    border-right: none; /* Hapus border pada kolom terakhir */
+}
+
+/* Image styling */
+.facility-detail img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Font styling for detail */
+.facility-detail h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Responsive Styling for Small Screens */
+
+@media (max-width: 1200px) {
+    .facility-detail img {
+        max-width: 150px;
+    }
+
+    
+}
+
+@media (max-width: 991px) {
+    .item-facility h3 {
+        font-size: 16px;
+    }
+
+    .item-facility h5 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .item-facility h3 {
+        font-size: 18px;
+    }
+}   
+@media (max-width: 576px) {
+
+    .item-title p {
+        text-align: left;
+    }
+    .hotel-facility-container {
+        padding: 10px;
+    }
+
+    .table-header, .table-row {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .item-facility {
+        text-align: left;
+        border: none;
+        font-weight: bold;
+        color: #333;
+        padding: 5px 0;
+    }
+
+    .facility-detail {
+        text-align: right;
+        border: none;
+        padding: 5px 0;
+    }
+
+    /* Adjusting layout for table-like style */
+    .table-header {
+        text-align: left;
+        background-color: transparent;
+        color: #007BFF;
+        padding: 5px 0;
+    }
+
+    .table-row {
+        flex-direction: row; /* Header on the left, data on the right */
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table-row:last-child {
+        border-bottom: none;
+    }
+
+    /* Ensuring images and content scale properly */
+    .facility-detail img {
+        max-width: 40px;
+    }
+
+    .facility-detail h5 {
+        font-size: 12px;
+        color: #666;
+    }
+}

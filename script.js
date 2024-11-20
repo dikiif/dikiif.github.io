@@ -29,3 +29,20 @@ updateValue("decrease-adults", "adults", "decrement");
 // Initialize buttons for Children
 updateValue("increase-children", "children", "increment");
 updateValue("decrease-children", "children", "decrement");
+
+// Script Carousel Modal on Item Detail 
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.item-detail-secondary img');
+    const carousel = document.querySelector('#carouselModalImages .carousel-inner');
+
+    images.forEach((image, index) => {
+        image.addEventListener('click', () => {
+            const carouselItems = carousel.querySelectorAll('.carousel-item');
+            carouselItems.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+        });
+    });
+});
+
+
