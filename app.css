@@ -13,6 +13,7 @@
     padding: 0.5rem;
     border-radius: 16px;
 }
+
 .button-login {
     background-color: #4691F2;
     color: #fff;
@@ -34,7 +35,7 @@
     transition: all .3s ease-in-out;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     background-color: #4691F2;
     color: #fff;
 }
@@ -93,11 +94,13 @@
     .navbar-brand img {
         width: 75px;
     }
+
     .button-login {
         font-size: small;
-    } 
+    }
 
 }
+
 /* End of Navbar  */
 
 /* Hero Home and Destinations */
@@ -113,7 +116,7 @@
 }
 
 
-.section-hero::after{
+.section-hero::after {
     content: "";
     clear: both;
     display: block;
@@ -154,7 +157,7 @@
 }
 
 
-.events-section-hero::after{
+.events-section-hero::after {
     content: "";
     clear: both;
     display: block;
@@ -194,7 +197,7 @@
     width: 100%;
     padding: 0 30px;
     border-radius: 50px;
-    border: none;   
+    border: none;
     font-weight: 600;
     font-size: 16px;
     position: relative;
@@ -293,7 +296,7 @@
 }
 
 
-.hotels-section-hero::after{
+.hotels-section-hero::after {
     content: "";
     clear: both;
     display: block;
@@ -328,7 +331,7 @@
     border-radius: 15px 10px 10px 15px;
     padding: 10px;
     width: 100%;
-    
+
 }
 
 .date-selection label {
@@ -369,7 +372,8 @@
 
 /* Hover dan Focus untuk input */
 .date-item .form-control:hover {
-    border-color: #007BFF; /* Warna biru */
+    border-color: #007BFF;
+    /* Warna biru */
     box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
 }
 
@@ -486,9 +490,12 @@
 /* Card Styling */
 
 .card {
-    border: none;  /* Remove the border */
-    box-shadow: none; /* Remove the shadow */
-    border-radius: 0; /* Remove rounded corners */
+    border: none;
+    /* Remove the border */
+    box-shadow: none;
+    /* Remove the shadow */
+    border-radius: 0;
+    /* Remove rounded corners */
     overflow: hidden;
     background-color: #fff;
 }
@@ -551,7 +558,9 @@
 }
 
 @media (max-width: 576px) {
-    .rec-title h2, p {
+
+    .rec-title h2,
+    p {
         text-align: center;
     }
 
@@ -567,10 +576,14 @@
 /* Footer */
 /* Footer Styling */
 .footer-07 {
-    background-color: #2d2d2d; /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 50px 0; /* Padding around the footer */
+    background-color: #2d2d2d;
+    /* Dark background color */
+    color: #fff;
+    /* White text color */
+    padding: 50px 0;
+    /* Padding around the footer */
     border-radius: 100px 100px 0 0;
+    
 }
 
 .footer-07 .logo {
@@ -582,7 +595,8 @@
 }
 
 .footer-07 .logo:hover {
-    color: #4691F2; /* Change color on hover */
+    color: #4691F2;
+    /* Change color on hover */
 }
 
 .footer-07 .menu {
@@ -598,7 +612,8 @@
 }
 
 .footer-07 .menu a:hover {
-    color: #4691F2; /* Change color on hover */
+    color: #4691F2;
+    /* Change color on hover */
 }
 
 .footer-07 .ftco-footer-social {
@@ -620,7 +635,8 @@
 }
 
 .footer-07 .ftco-footer-social li a:hover {
-    color: #4691F2; /* Change color on hover */
+    color: #4691F2;
+    /* Change color on hover */
 }
 
 /* Responsive Design */
@@ -649,7 +665,7 @@
         display: inline-block;
         margin: 10px 5px;
     }
-    
+
     .footer-07 .ftco-footer-social li a {
         font-size: 22px;
     }
@@ -792,6 +808,7 @@
     .item-detail-hero {
         margin-top: 150px;
     }
+
     .hotel-title {
         font-size: 18px;
     }
@@ -821,141 +838,347 @@
 }
 
 
+/*  Login CSS */
 
-/*  Item Facility */
-/* Container styling */
-.hotel-facility-container {
-    border: 1px solid #ddd; /* Border luar */
-    border-radius: 12px; /* Sedikit lengkung pada sudut */
-    padding: 15px;
-    background-color: #fff;
-    margin-top: 35px;
-}
-
-/* Header styling */
-.table-header {
-    background-color: #4691F2; /* Warna biru untuk header */
-    color: white;
-    border-radius: 8px;
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+  }
+  .login-container {
+    max-width: 900px;
+    width: 100%;
     padding: 10px;
-    margin: 10px 10px 0;
-    font-weight: bold;
+    border-radius: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .login-left {
+    padding: 30px;
+    background-color: #fff;
+  }
+  .login-right {
+    background: url('assets/login-img.png') center/cover no-repeat;
+    border-radius: 10px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .form-control {
+    border-radius: 5px;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+  .register-link {
     text-align: center;
-    border-bottom: 1px solid #ddd; /* Garis bawah untuk memisahkan */
+    margin-top: 15px;
+  }
+.sign-in-text {
+    font-weight: bolder;
 }
 
-/* Row styling */
-.table-row {
-    padding: 10px 30px;
+/* Sign Up */
+
+.signup-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  .signup-container {
+    max-width: 900px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .signup-left {
+    padding: 30px;
+    background-color: #fff;
+  }
+  .signup-right {
+    background: url('assets/login-img.png') center/cover no-repeat;
+    border-radius: 10px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .form-control {
+    border-radius: 5px;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+/* Hotel Review */
+
+.item-title2 h2 {
+    font-weight: 700;
+}
+
+.item-title2 {
+    font-weight: 700;
+}
+.carousel-item {
+    padding: 20px;
+  }
+  .review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .review-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .review-header {
     display: flex;
     align-items: center;
-}
+    margin-bottom: 10px;
+  }
+  .review-header .user-info {
+    margin-left: 10px;
+  }
+  .stars {
+    color: #ffc107;
+  }
 
-/* Individual column styling */
-.item-facility, 
-.facility-detail {
-    text-align: center;
-    padding: 10px;
-    border-right: 1px solid #ddd; /* Border antar kolom */
-}
+/* Hotel Facility */
+.facility-icon {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  .facility-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .facility-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-.item-facility:last-child, 
-.facility-detail:last-child {
-    border-right: none; /* Hapus border pada kolom terakhir */
-}
+  /* Room Type */
 
-/* Image styling */
-.facility-detail img {
-    max-width: 250px;
-    height: auto;
-}
-
-/* Font styling for detail */
-.facility-detail h5 {
-    font-size: 18px;
+  .room-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .room-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .room-info {
+    padding: 20px;
+  }
+  .room-title {
+    font-size: 1.5rem;
     font-weight: bold;
+  }
+  .room-price {
+    font-size: 1.25rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .room-facilities {
+    margin-top: 15px;
+  }
+  .reserve-btn {
+    margin-top: 20px;
+  }
+
+/* Hotel Reserved */
+
+/* General Styles */
+.hotel-reserved-body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-hotel-reserved {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .container-hotel-reserved h2, .container-hotel-reserved h4 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .nav-pills .nav-link {
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  .nav-pills .nav-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  /* Panels Styling */
+  .row {
+    margin-top: 20px;
+  }
+  
+  .col-md-6 {
+    padding: 15px;
+  }
+  
+  form label {
+    font-weight: 500;
     color: #555;
-}
-
-/* Responsive Styling for Small Screens */
-
-@media (max-width: 1200px) {
-    .facility-detail img {
-        max-width: 150px;
+  }
+  
+  form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  .btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-outline-primary {
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* List Group Styling */
+  .list-group-item {
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 10px 15px;
+  }
+  
+  .list-group-item:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  .list-group-item:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  /* Payment Section */
+  .form-check-label {
+    font-weight: 500;
+  }
+  
+  .form-check-input:checked + .form-check-label {
+    color: #007bff;
+    font-weight: 600;
+  }
+  
+  .btn-success {
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-pills .nav-link {
+      font-size: 0.85rem;
     }
-
-    
-}
-
-@media (max-width: 991px) {
-    .item-facility h3 {
-        font-size: 16px;
+  
+    h2 {
+      font-size: 1.5rem;
     }
-
-    .item-facility h5 {
-        font-size: 12px;
+  
+    .form-label {
+      font-size: 0.9rem;
     }
-}
-@media (max-width: 768px) {
-    .item-facility h3 {
-        font-size: 18px;
+  
+    .btn {
+      font-size: 0.9rem;
     }
-}   
-@media (max-width: 576px) {
-
-    .item-title p {
-        text-align: left;
-    }
-    .hotel-facility-container {
-        padding: 10px;
-    }
-
-    .table-header, .table-row {
-        display: flex;
-        flex-direction: column;
-        border: none;
-    }
-
-    .item-facility {
-        text-align: left;
-        border: none;
-        font-weight: bold;
-        color: #333;
-        padding: 5px 0;
-    }
-
-    .facility-detail {
-        text-align: right;
-        border: none;
-        padding: 5px 0;
-    }
-
-    /* Adjusting layout for table-like style */
-    .table-header {
-        text-align: left;
-        background-color: transparent;
-        color: #007BFF;
-        padding: 5px 0;
-    }
-
-    .table-row {
-        flex-direction: row; /* Header on the left, data on the right */
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .table-row:last-child {
-        border-bottom: none;
-    }
-
-    /* Ensuring images and content scale properly */
-    .facility-detail img {
-        max-width: 40px;
-    }
-
-    .facility-detail h5 {
-        font-size: 12px;
-        color: #666;
-    }
-}
+  }
+  

@@ -283,40 +283,237 @@
         </div>
     </div>
 
-    <!-- Hotel Facility -->
-    <div class="hotel-facility-container container">
-        <!-- Header Row -->
-        <div class="row table-header">
-            <div class="col item-facility">
-                <h3>Room Type</h3>
-            </div>
-            <div class="col item-facility">
-                <h3>Guest</h3>
-            </div>
-            <div class="col item-facility">
-                <h3>Price</h3>
-            </div>
-            <div class="col item-facility">
-                <h3>Facility</h3>
-            </div>
+    <!-- Hotel Review -->
+    <div class="container my-5">
+        <div class="d-flex item-title2 justify-content-between align-items-center mb-3">
+            <h2>Reviews</h2>
+            <a href="review-detail.html" class="btn btn-outline-primary btn-sm">See All</a>
         </div>
 
-        <!-- Detail Row -->
-        <div class="row table-row">
-            <div class="col facility-detail">
-                <img class="img-fluid" src="assets/facility-detail-1.png" alt="Room Type">
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Review 1 -->
+                <div class="carousel-item active">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="assets/foto-pengguna/user1.jpeg" alt="User Photo">
+                            <div class="user-info">
+                                <h6 class="mb-0">Dirga Amanat</h6>
+                                <small class="text-muted">12 Dec 2024</small>
+                            </div>
+                        </div>
+                        <div class="stars mb-2">
+                            ★★★★☆
+                        </div>
+                        <p>Great experience! The hotel was clean, and the staff was very friendly. Highly recommended!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="carousel-item">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="assets/foto-pengguna/user2.jpg" alt="User Photo">
+                            <div class="user-info">
+                                <h6 class="mb-0">Surya Setiabudi</h6>
+                                <small class="text-muted">10 Dec 2024</small>
+                            </div>
+                        </div>
+                        <div class="stars mb-2">
+                            ★★★★★
+                        </div>
+                        <p>Amazing service and beautiful location. Will definitely come back!</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="carousel-item">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="assets/foto-pengguna/user4.jpg" alt="User Photo">
+                            <div class="user-info">
+                                <h6 class="mb-0">Michele Virginia</h6>
+                                <small class="text-muted">8 Dec 2024</small>
+                            </div>
+                        </div>
+                        <div class="stars mb-2">
+                            ★★★★☆
+                        </div>
+                        <p>Good value for money. The facilities were excellent, and the food was delicious!</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col facility-detail">
-                <h5 class="item-detail-text">2 adults, 0 children, 1 room</h5>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hotel Facility -->
+    <div class="container my-5">
+        <div class="d-flex item-title2 justify-content-between align-items-center mb-4">
+            <h2>Available Facilities</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="facility-card">
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-water" viewBox="0 0 16 16">
+                            <path
+                                d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Swimming Pool</span>
+                    </div>
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path
+                                d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049" />
+                            <path
+                                d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Free Wifi</span>
+                    </div>
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tv" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Television</span>
+                    </div>
+                </div>
             </div>
-            <div class="col facility-detail">
-                <h5 class="item-detail-text">$ 250</h5>
+            <div class="col-md-4">
+                <div class="facility-card">
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-thermometer-snow" viewBox="0 0 16 16">
+                            <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V9.5a.5.5 0 0 1 1 0v1.585A1.5 1.5 0 0 1 5 12.5" />
+                            <path
+                                d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1m5 1a.5.5 0 0 1 .5.5v1.293l.646-.647a.5.5 0 0 1 .708.708L9 5.207v1.927l1.669-.963.495-1.85a.5.5 0 1 1 .966.26l-.237.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.884.237a.5.5 0 1 1-.26.966l-1.848-.495L9.5 8l1.669.963 1.849-.495a.5.5 0 1 1 .258.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.237.883a.5.5 0 1 1-.966.258L10.67 9.83 9 8.866v1.927l1.354 1.353a.5.5 0 0 1-.708.708L9 12.207V13.5a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Air Conditioning</span>
+                    </div>
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-workspace" viewBox="0 0 16 16">
+                            <path
+                                d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            <path
+                                d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Room Service</span>
+                    </div>
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-p-square" viewBox="0 0 16 16">
+                            <path
+                                d="M5.5 4.002h2.962C10.045 4.002 11 5.104 11 6.586c0 1.494-.967 2.578-2.55 2.578H6.784V12H5.5zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97z" />
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Free Parking</span>
+                    </div>
+                </div>
             </div>
-            <div class="col facility-detail">
-                <img class="img-fluid" src="assets/facility-detail-2.png" alt="Facility">
+            <div class="col-md-4">
+                <div class="facility-card">
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cookie" viewBox="0 0 16 16">
+                            <path
+                                d="M6 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m4.5.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.5 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                            <path
+                                d="M8 0a7.96 7.96 0 0 0-4.075 1.114q-.245.102-.437.28A8 8 0 1 0 8 0m3.25 14.201a1.5 1.5 0 0 0-2.13.71A7 7 0 0 1 8 15a6.97 6.97 0 0 1-3.845-1.15 1.5 1.5 0 1 0-2.005-2.005A6.97 6.97 0 0 1 1 8c0-1.953.8-3.719 2.09-4.989a1.5 1.5 0 1 0 2.469-1.574A7 7 0 0 1 8 1c1.42 0 2.742.423 3.845 1.15a1.5 1.5 0 1 0 2.005 2.005A6.97 6.97 0 0 1 15 8c0 .596-.074 1.174-.214 1.727a1.5 1.5 0 1 0-1.025 2.25 7 7 0 0 1-2.51 2.224Z" />
+                        </svg>&nbsp;&nbsp;
+                        <span>On-site Restaurant</span>
+                    </div>
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-playstation" viewBox="0 0 16 16">
+                            <path
+                                d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125 2.525.017 3.616.43 1.23.39 1.368.962 1.056 1.356M9.625 8.883v-3.86c0-.453-.083-.87-.508-.988-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985 2.207.757 2.955 1.7 2.955 3.825 0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538.386.126 1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.45 8.45 0 0 1-4.018-.323Z" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Kids Play Area</span>
+                    </div>
+                    <div class="facility-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tree" viewBox="0 0 16 16">
+                            <path
+                                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507" />
+                        </svg>&nbsp;&nbsp;
+                        <span>Scenic View</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Room Type -->
+    <div class="container my-5">
+        <h2 class="mb-4 item-title2">Room Types</h2>
+
+        <!-- Deluxe Room -->
+        <div class="room-container d-md-flex">
+            <!-- Left Panel: Image -->
+            <div class="col-md-6">
+                <img src="assets/hotel-1.jpg" alt="Deluxe Room" class="room-image w-100">
+            </div>
+            <!-- Right Panel: Details -->
+            <div class="room-info col-md-6">
+                <h3 class="room-title">Deluxe Room</h3>
+                <p class="room-price">IDR 1.748.669</p>
+                <div class="room-facilities">
+                    <h5>Facilities:</h5>
+                    <ul>
+                        <li>Free WiFi</li>
+                        <li>King Size Bed</li>
+                        <li>Air Conditioning</li>
+                        <li>Flat Screen TV</li>
+                        <li>Private Bathroom with Hot Water</li>
+                    </ul>
+                </div>
+                <a href="hotel-reserved.html" class="btn btn-primary reserve-btn w-100">Reserve Now</a>
+            </div>
+        </div>
+
+        <!-- Premium Room -->
+        <div class="room-container d-md-flex">
+            <!-- Left Panel: Image -->
+            <div class="col-md-6">
+                <img src="assets/hotel-3.jpg" alt="Premium Room" class="room-image w-100">
+            </div>
+            <!-- Right Panel: Details -->
+            <div class="room-info col-md-6">
+                <h3 class="room-title">Premium Room</h3>
+                <p class="room-price">IDR 720.500</p>
+                <div class="room-facilities">
+                    <h5>Facilities:</h5>
+                    <ul>
+                        <li>Free WiFi</li>
+                        <li>Queen Size Bed</li>
+                        <li>Air Conditioning</li>
+                        <li>Flat Screen TV</li>
+                        <li>Complimentary Breakfast</li>
+                    </ul>
+                </div>
+                <a href="hotel-reserve.html" class="btn btn-primary reserve-btn w-100">Reserve Now</a>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Section Footer  -->
     <footer class="footer-07 mt-5">
@@ -380,7 +577,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Js Link -->
     <script src="script.js"></script>
     <!-- Javascript activation bootstrap -->
