@@ -1,22 +1,32 @@
-// Function to handle increment and decrement
+// Fungsi untuk mengatur increment dan decrement
 function updateValue(buttonId, inputId, operation) {
     const button = document.getElementById(buttonId);
     const input = document.getElementById(inputId);
 
+    // Pastikan elemen ditemukan
+    if (!button || !input) {
+        console.error(`Element with ID ${buttonId} or ${inputId} not found.`);
+        return;
+    }
+
+    // Tambahkan event listener ke tombol
     button.addEventListener("click", () => {
         let currentValue = parseInt(input.value, 10);
         if (isNaN(currentValue)) currentValue = 0;
 
-        // Increment or decrement based on the operation
         if (operation === "increment") {
             input.value = currentValue + 1;
-        } else if (operation === "decrement") {
-            if (currentValue > parseInt(input.min, 10)) {
-                input.value = currentValue - 1;
-            }
+        } else if (operation === "decrement" && currentValue > parseInt(input.min, 10)) {
+            input.value = currentValue - 1;
         }
     });
 }
+
+// Inisialisasi fungsi pada DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    updateValue('decrease-rooms', 'rooms', 'decrement');
+    updateValue('increase-rooms', 'rooms', 'increment');
+});
 
 // Initialize buttons for Rooms
 updateValue("increase-rooms", "rooms", "increment");
@@ -45,4 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Script untuk Destination-detail bagian hero
+// Change main image when clicking a thumbnail
+function changeMainImage(src) {
+    document.getElementById('mainImage').src = src;
+}
+
+// Open the carousel modal
+document.getElementById('mainImage').addEventListener('click', function () {
+    const modal = new bootstrap.Modal(document.getElementById('carouselModal'));
+    modal.show();
+});
 
