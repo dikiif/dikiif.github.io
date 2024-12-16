@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Keranjang | Go Anywhere</title>
+    <title>Checkout | Go Anywhere</title>
 
     <!-- Zoho PageSense Code Snippet  -->
     <script src="https://cdn.pagesense.io/js/nkxxtoy8/cd7b68e095ee4f65bacfa0eb66439f36.js"></script>
@@ -25,12 +25,33 @@
 </head>
 
 <body>
+
+    <!-- Navbar of Process -->
     <div class="container my-5">
-        <h2 class="mb-4">Checkout</h2>
+        <div class="row d-flex justify-content-center">
+            <ul class="process-navbar list-unstyled d-flex justify-content-between">
+                <a href="keranjang.html" class="process-step">
+                    <div class="circle">1</div>
+                    <span>Keranjang</span>
+                </a>
+                <a href="checkout.html" class="process-step">
+                    <div class="circle">2</div>
+                    <span class="fw-bold" style="color: #007bff;">Metode Pembayaran</span>
+                </a>
+                <a href="status-bayar.html" class="process-step">
+                    <div class="circle">3</div>
+                    <span>Status Pembayaran</span>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="mb-4 checkout-card">Checkout</h2>
         <div class="row">
             <!-- Detail Pembayaran -->
             <div class="col-lg-8">
-                <div class="card p-4 shadow-sm mb-4">
+                <div class="card detail-bayar-card p-4 shadow-sm mb-4">
                     <h5 class="mb-3">Detail Produk</h5>
                     <!-- Produk Item -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -47,47 +68,46 @@
                     </div>
                 </div>
 
-                <div class="card p-4 shadow-sm">
-                    <h5 class="mb-3">Metode Pembayaran</h5>
+                <div class="card detail-bayar-card p-4 shadow-sm">
+                    <div class="row d-flex flex-column align-item-end">
+                        <h5 class="mb-3">Metode Pembayaran</h5>
+                    </div>
                     <div class="form-check mb-2">
                         <input class="form-check-input" type="radio" name="paymentMethod" id="transfer" checked>
                         <label class="form-check-label" for="transfer">
-                            Transfer Bank
+                            <img src="assets/foto-lainnya/mandiri-logo.webp" alt="">
+                            &nbsp; Mandiri Virtual Account
                         </label>
                     </div>
+                    <hr style="color: rgb(87, 87, 87);">
                     <div class="form-check mb-2">
                         <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard">
                         <label class="form-check-label" for="creditCard">
-                            Kartu Kredit
+                            <img src="assets/foto-lainnya/bca.png" alt="">
+                            &nbsp; BCA Virtual Account
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="paymentMethod" id="ewallet">
-                        <label class="form-check-label" for="ewallet">
-                            E-Wallet
-                        </label>
-                    </div>
+                    <hr style="color: rgb(87, 87, 87);">
                 </div>
             </div>
 
             <!-- Ringkasan Belanja -->
             <div class="col-lg-4">
-                <div class="card summary-card">
+                <div class="card detail-bayar-card ringkasan-bayar summary-card">
                     <h5 class="mb-3">Ringkasan Pembayaran</h5>
-                    <div class="d-flex justify-content-between mb-2">
+                    <div class="d-flex flex-column mb-2">
                         <span>Total Harga:</span>
                         <span class="fw-bold">Rp 800.000</span>
                     </div>
-                    <div class="d-flex justify-content-between mb-3">
+                    <div class="d-flex flex-column mb-3">
                         <span>Biaya Layanan:</span>
                         <span class="fw-bold">Rp 20.000</span>
-                    </div>
                     <hr>
-                    <div class="d-flex justify-content-between mb-3">
+                    <div class="d-flex flex-column mb-3">
                         <span>Total Pembayaran:</span>
                         <span class="fw-bold text-primary">Rp 820.000</span>
                     </div>
-                    <button class="btn btn-primary w-100">Bayar Sekarang</button>
+                    <a href="status-bayar.html" class="btn btn-primary w-100">Bayar Sekarang</a>
                 </div>
             </div>
         </div>

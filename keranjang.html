@@ -23,107 +23,33 @@
     <!-- Title logo -->
     <link rel="icon" href="assets/Logo-Basic.png">
 
-    <style>
-        .body-keranjang {
-            background-color: #f8f9fa;
-        }
-
-        .card-keranjang {
-            border: none;
-            border-radius: 10px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .card-keranjang:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .card-keranjang img {
-            border-radius: 24px;
-        }
-
-        .btn-keranjang {
-            background-color: #007bff;
-            border: none;
-            font-size: 1.1rem;
-            padding: 12px;
-            background-image: linear-gradient(45deg, #007bff, #0056b3);
-        }
-
-        .btn-keranjang:hover {
-            background-color: #0056b3;
-            background-image: linear-gradient(45deg, #0056b3, #003f7f);
-        }
-
-        .ringkasan-card {
-            position: sticky;
-            top: 20px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-list-keranjang {
-            background-color: #2780df;
-            color: white;
-            font-weight: bolder;
-            padding: 20px;
-            border-radius: 18px;
-        }
-
-        .card-keranjang h5 {
-            font-weight: bolder;
-            color: #007bff;
-        }
-
-        .ringkasan-card h5 {
-            font-weight: bolder;
-            color: #007bff;
-        }
-
-        @media (max-width: 992px) {
-            .ringkasan-card {
-                position: static;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .card-keranjang .row {
-                flex-direction: column;
-            }
-
-            .card-keranjang img {
-                margin-bottom: 15px;
-                border-radius: 24px;
-            }
-
-            .btn-keranjang {
-                font-size: 1rem;
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .card-keranjang h5 {
-                text-align: center;
-            }
-            .btn-keranjang {
-                padding: 10px;
-            }
-
-            .ringkasan-card {
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
+
 <body>
+
+    <!-- Navbar of Process -->
+    <div class="container my-5">
+        <div class="row d-flex justify-content-center">
+            <ul class="process-navbar list-unstyled d-flex justify-content-between">
+                <a href="keranjang.html" class="process-step">
+                    <div class="circle">1</div>
+                    <span class="fw-bold" style="color: #007bff;">Keranjang</span>
+                </a>
+                <a href="checkout.html" class="process-step">
+                    <div class="circle">2</div>
+                    <span>Metode Pembayaran</span>
+                </a>
+                <a href="status-bayar.html" class="process-step">
+                    <div class="circle">3</div>
+                    <span>Status Pembayaran</span>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Keranjang -->
     <div class="body-keranjang container my-5">
-        <h2 class="mb-4 fw-bold" style="color: #007bff;" >Keranjang</h2>
+        <h2 class="mb-4 fw-bold" style="color: #007bff;">Keranjang</h2>
         <div class="row">
             <!-- Produk List -->
             <div class="col-lg-8">
@@ -136,7 +62,8 @@
                 <div class="card card-keranjang mb-3 p-3 shadow-sm">
                     <div class="row g-0">
                         <div class="col-md-3">
-                            <img src="assets/destination-detail1.png" alt="Tiket Destinasi" class="img-fluid img-keranjang rounded">
+                            <img src="assets/destination-detail1.png" alt="Tiket Destinasi"
+                                class="img-fluid img-keranjang rounded">
                         </div>
                         <div class="col-md-6 d-flex flex-column justify-content-center">
                             <h5>Tiket Masuk Destinasi Wisata</h5>
@@ -215,4 +142,5 @@
         });
     </script>
 </body>
+
 </html>
