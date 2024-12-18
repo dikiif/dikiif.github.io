@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Keranjang | Go Anywhere</title>
+    <title>Checkout | Go Anywhere</title>
 
     <!-- Zoho PageSense Code Snippet  -->
     <script src="https://cdn.pagesense.io/js/nkxxtoy8/cd7b68e095ee4f65bacfa0eb66439f36.js"></script>
@@ -22,11 +22,12 @@
     <link rel="stylesheet" href="app.css">
     <!-- Title logo -->
     <link rel="icon" href="assets/Logo-Basic.png">
-
 </head>
 
 <body>
+
     <!-- Navbar -->
+      <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container-fluid">
             <a class="navbar-brand me-auto" href="index.html">
@@ -178,131 +179,73 @@
             </nav>
         </div>
     </nav>
-
-    <!-- Navbar of Process -->
-    <div class="body-navbar-process container my-5">
-        <div class="row d-flex justify-content-center">
-            <ul class="process-navbar list-unstyled d-flex justify-content-between">
-                <a href="keranjang.html" class="process-step">
-                    <div class="circle">1</div>
-                    <span class="fw-bold" style="color: #007bff;">Cart</span>
-                </a>
-                <a href="checkout.html" class="process-step">
-                    <div class="circle">2</div>
-                    <span>Payment Method</span>
-                </a>
-                <a href="status-bayar.html" class="process-step">
-                    <div class="circle">3</div>
-                    <span>Payment Status</span>
-                </a>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Keranjang -->
-    <div class="body-keranjang container my-5">
-        <h2 class="mb-4 fw-bold" style="color: #007bff;">Carts</h2>
-        <div class="row">
-            <!-- Produk List -->
-            <div class="col-lg-8">
-                <div class="d-flex form-list-keranjang align-items-center mb-3">
-                    <input type="checkbox" id="select-all" class="me-2">
-                    <label for="select-all">Choose</label>
-                    &nbsp;
-                    <a href="keranjang-allcart.html" class="me-0" style="color: white;">All Cart</a>
-                </div>
-
-                <!-- Produk Item -->
-                <div class="card card-keranjang mb-3 p-3 shadow-sm">
-                    <div class="row g-0">
-                        <div class="col-md-3">
-                            <img src="assets/destination-detail1.png" alt="Tiket Destinasi"
-                                class="img-fluid img-keranjang rounded">
-                        </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h5>Itinerary Premium (Scheduled)</h5>
-                            <p class="mb-0">2 Days in Bali</p>
-                            <p class="text-muted mb-0">Price: USD 20</p>
-                        </div>
-                        <div class="col-md-3 d-flex align-items-center justify-content-end">
-                            <input type="checkbox" class="product-checkbox">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Produk Item -->
-                <div class="card card-keranjang mb-3 p-3 shadow-sm">
-                    <div class="row g-0">
-                        <div class="col-md-3">
-                            <img src="assets/events-1.png" alt="Pemesanan Hotel" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h5>Event Subscriptions</h5>
-                            <p class="mb-0">1 Month</p>
-                            <p class="text-muted mb-0">Price: USD 70</p>
-                        </div>
-                        <div class="col-md-3 d-flex align-items-center justify-content-end">
-                            <input type="checkbox" class="product-checkbox">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Produk Item -->
-                <div class="card card-keranjang mb-3 p-3 shadow-sm">
-                    <div class="row g-0">
-                        <div class="col-md-3">
-                            <img src="assets/foto-lainnya/gym.jpg" alt="Fasilitas Tambahan" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h5>Hotels and Additional Facility</h5>
-                            <p class="mb-0">Hotel MAUA Nusa Penida: Deluxe Room</p>
-                            <p class="mb-0">Private Gym</p>
-                            <p class="text-muted mb-0">Price: USD 355</p>
-                        </div>
-                        <div class="col-md-3 d-flex align-items-center justify-content-end">
-                            <input type="checkbox" class="product-checkbox">
-                        </div>
-                    </div>
-                </div>
-
     
+
+    <div class="container my-5">
+        <h2 class="mb-4 checkout-card">Checkout</h2>
+        <div class="row">
+            <!-- Detail Pembayaran -->
+            <div class="col-lg-8">
+                <div class="card detail-bayar-card p-4 shadow-sm mb-4">
+                    <h5 class="mb-3">Product Details</h5>
+                    <!-- Produk Item -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span>Itinerary Premium (Scheduled)</span>
+                        <span class="fw-bold">USD 20</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span>Event Subscriptions (1 Month)</span>
+                        <span class="fw-bold">USD 70</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span>Hotel MAUA Nusa Penida and Gym Premium</span>
+                        <span class="fw-bold">USD 355</span>
+                    </div>
+                </div>
+
+                <div class="card detail-bayar-card p-4 shadow-sm">
+                    <div class="row d-flex flex-column align-item-end">
+                        <h5 class="mb-3">Payment Methods</h5>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="transfer" checked>
+                        <label class="form-check-label" for="transfer">
+                            <img src="assets/foto-lainnya/mandiri-logo.webp" alt="">
+                            &nbsp; Mandiri Virtual Account
+                        </label>
+                    </div>
+                    <hr style="color: rgb(87, 87, 87);">
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard">
+                        <label class="form-check-label" for="creditCard">
+                            <img src="assets/foto-lainnya/bca.png" alt="">
+                            &nbsp; BCA Virtual Account
+                        </label>
+                    </div>
+                    <hr style="color: rgb(87, 87, 87);">
+                </div>
             </div>
 
             <!-- Ringkasan Belanja -->
             <div class="col-lg-4">
-                <div class="card ringkasan-card">
-                    <h5 class="mb-3">Summary</h5>
-                    <div class="d-flex justify-content-between">
+                <div class="card detail-bayar-card ringkasan-bayar summary-card">
+                    <h5 class="mb-3">Payment Summary</h5>
+                    <div class="d-flex flex-column mb-2">
                         <span>Total Price</span>
-                        <span class="fw-bold">USD 0</span>
+                        <span class="fw-bold">USD 455</span>
                     </div>
+                    <div class="d-flex flex-column mb-3">
+                        <span>Service Fee</span>
+                        <span class="fw-bold">USD 20</span>
                     <hr>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column mb-3">
                         <span class="fw-bold">Total Payment</span>
-                        <span class="fw-bold">USD 0</span>
+                        <span class="fw-bold text-primary">USD 475</span>
                     </div>
-                    <!-- <a href="checkout.html" class="btn btn-keranjang btn-primary w-100 mt-3">Pay Now</a> -->
+                    <a href="status-bayar-pesanan.html" class="btn btn-primary w-100">Pay Now</a>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Link to js -->
-    <script src="script.js"></script>
-
-    <!-- Bootstrap Javascript Activation -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const selectAllCheckbox = document.getElementById('select-all');
-        const productCheckboxes = document.querySelectorAll('.product-checkbox');
-
-        selectAllCheckbox.addEventListener('change', () => {
-            productCheckboxes.forEach(checkbox => checkbox.checked = selectAllCheckbox.checked);
-        });
-    </script>
 </body>
 
 </html>

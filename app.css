@@ -1802,7 +1802,7 @@ form .form-control:focus {
         color: #d9534f;
     }
     
-    img {
+    .row-pesanan img {
         width: 100%;
         height: auto;
         border-radius: 8px;
@@ -1814,3 +1814,15 @@ form .form-control:focus {
         }
     }
     
+/* Hotles: Booking Summary  */
+.span-booking-summary span {
+    background-color: #007BFF;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 8px;
+}
+
+/* Navbar Body Process */
+.body-navbar-process {
+    margin:50px;
+}

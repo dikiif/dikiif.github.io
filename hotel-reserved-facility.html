@@ -43,7 +43,7 @@
 
             <div class="tab-content">
                 <!-- Step 1: Order Details -->
-                <div class="tab-pane fade show active" id="step1">
+                <div class="tab-pane fade show" id="step1">
                     <div class="row">
                         <!-- Left Panel -->
                         <div class="col-md-6">
@@ -63,11 +63,11 @@
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="Enter your email">
                                 </div>
-                                <!-- <div class="mb-3">
+                                <div class="mb-3">
                                     <label for="roomDetails" class="form-label">Room Details</label>
                                     <textarea class="form-control" id="roomDetails" rows="3"
                                         placeholder="Describe your booking room"></textarea>
-                                </div> -->
+                                </div>
                                 <button type="button" class="btn btn-primary w-100">Continue to Step 2</button>
                             </form>
                         </div>
@@ -96,7 +96,7 @@
                 </div>
 
                 <!-- Step 2: Facility Addition -->
-                <div class="tab-pane fade" id="step2">
+                <div class="tab-pane fade active" id="step2">
                     <div class="row">
                         <!-- Left Panel -->
                         <div class="col-md-6">
@@ -107,9 +107,7 @@
                                     <h5 class="card-title">Gym Premium</h5>
                                     <p class="card-text">Access to a premium gym with modern equipment.</p>
                                     <p class="text-success fw-bold">Price: USD 45</p>
-                                    <a href="hotel-reserved-facility.html" class="btn btn-outline-primary w-100">
-                                        Book
-                                    </a>
+                                    <button class="btn btn-outline-primary w-100">Book</button>
                                 </div>
                             </div>
                             <div class="card mb-3">
@@ -124,9 +122,9 @@
                             <div class="card mb-3">
                                 <img src="assets/foto-lainnya/pool.jpg" class="card-img-top" alt="Pool">
                                 <div class="card-body">
-                                    <h5 class="card-title">Private Warm Pool</h5>
-                                    <p class="card-text">Relax in a private warm pool during your stay.</p>
-                                    <p class="text-success fw-bold">Price: USD 100</p>
+                                    <h5 class="card-title">Private Pool</h5>
+                                    <p class="card-text">Relax in a private pool during your stay.</p>
+                                    <p class="text-success fw-bold">Price: USD 30</p>
                                     <button class="btn btn-outline-primary w-100">Book</button>
                                 </div>
                             </div>
@@ -135,7 +133,7 @@
                         <div class="col-md-6">
                             <h4 class="fw-bold" style="color: #0d6efd;">Updated Booking Summary</h4>
                             <ul class="list-group">
-                                <!-- <li class="list-group-item span-booking-summary">
+                                <li class="list-group-item span-booking-summary">
                                     <span class="fw-bold">Base Price Deluxe Room</span>&nbsp; USD 300
                                 </li>
                                 <li class="list-group-item span-booking-summary">
@@ -146,7 +144,7 @@
                                 </li>
                                 <li class="list-group-item span-booking-summary">
                                     <span class="fw-bold">Total Price</span>&nbsp; <b>USD 355</b>
-                                </li> -->
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -185,6 +183,7 @@
                                 <li class="list-group-item">Total Price: USD 355</li>
                             </ul>
                             <a href="status-bayar-hotel.html" class="btn btn-primary w-100 mt-3">Pay Now</a>
+                            <a href="added-to-cart.html" class="btn btn-primary w-100 mt-3">Add to Cart</a>
                         </div>
                     </div>
                 </div>
